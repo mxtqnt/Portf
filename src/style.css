@@ -12,6 +12,12 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: poppins;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;    
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;
+
 }
 
 ::-webkit-scrollbar {
@@ -58,6 +64,12 @@ body {
     margin-left: 1.25rem;
 }
 
+.nav a:hover {
+    color: var(--Pink);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
 .nav li{
     margin: 10px;
 }
@@ -70,32 +82,27 @@ body {
     overflow: auto; 
     overflow-y: hidden;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .home {
     padding-top: 10rem;
     height: 100vh;
-}
+} 
 
-.projetos {
-    padding-top: 10rem;
-    height: 100vh;
-}
-
-.habilidades {
-    padding-top: 10rem;
-    height: 100vh;
-}
-
-.linetime {
-    padding-top: 10rem;
-    height: 100vh;
+.contato {
+    padding-top: 10%;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 .footer {
     background-color: var(--Pink);
     width: 100%;
-    padding-left: 8%;
+    padding: 2%;
+    gap: 10rem;
+    display: flex;
+    justify-content: center;
 }
 
 .recuo {
@@ -111,7 +118,9 @@ body {
 }
 
 .nuvem{
-    padding: 15%;
+    display: inline;
+    text-align: center;
+    justify-content: center;
 }
 
 a {
@@ -174,7 +183,7 @@ h8 {
     font-weight: 800;
     font-size: 50px;
     color: var(--White);
-    display: inline;
+    margin-left: 10%;
 }
 
 h9 {
@@ -182,18 +191,24 @@ h9 {
     font-size: 30px;
     color: var(--White);
     display: inline;
+    margin-left: 8%;
 }
 
 h10 {
     font-weight: 800;
-    font-size: 80px;
+    font-size: 100px;
     color: var(--Pink);
     display: inline;
+    margin-left: 4%;
 }
 
-
-
-
+h11 {
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--White);
+    display: inline;
+    text-align: center;
+}
 
 img.icone{
     max-width: 100%;
@@ -204,4 +219,15 @@ img.icone{
     margin: 0%;
     margin-bottom: 5px; 
     margin-right: auto;
+}
+
+.nuvem {
+    color: var(--White);
+    cursor:default;
+}
+
+.nuvem :hover {
+    color: var(--Pink);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
 }
