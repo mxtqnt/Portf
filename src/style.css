@@ -26,6 +26,7 @@
 
 body {
     background-color: var(--Black);
+    overflow-x: hidden;
 }
 
 .nav {
@@ -67,18 +68,21 @@ body {
     padding-right: 8%;
     margin-top: 5rem;
     overflow: auto; 
-    overflow-x: hidden;
+    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
 .home {
-    scroll-behavior: smooth;
     padding-top: 10rem;
     height: 100vh;
 }
 
 .projetos {
-    scroll-behavior: smooth;
+    padding-top: 10rem;
+    height: 100vh;
+}
+
+.habilidades {
     padding-top: 10rem;
     height: 100vh;
 }
@@ -91,6 +95,10 @@ body {
 
 .recuo {
     padding-left: 5%;
+}
+
+.nuvem{
+    padding: 15%;
 }
 
 a {
@@ -148,6 +156,31 @@ h7 {
     color: var(--White);
     display: inline;
 }
+
+h8 {
+    font-weight: 800;
+    font-size: 50px;
+    color: var(--White);
+    display: inline;
+}
+
+h9 {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--White);
+    display: inline;
+}
+
+h10 {
+    font-weight: 800;
+    font-size: 80px;
+    color: var(--Pink);
+    display: inline;
+}
+
+
+
+
 
 img.icone{
     max-width: 100%;
