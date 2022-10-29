@@ -1,16 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.navbar {
-    background-color: black;
+:root {
+    --White: #ffffff;
+    --Black: #1F2125;
+    --Pink: #A91079;
+    --Gray: #333333;
 }
 
-.section {
-    background-color: blue;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+::-webkit-scrollbar {
+    width: .30rem;
+    height: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--Pink);
+    border-radius: 20rem;
+  }
+
+body {
+    background-color: var(--Black);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+
+    z-index: 3;
+
+    width: 100%;
+
+    display: flex;
+    align-items: left;
+    
+    margin: 0px;
+    margin-top: 0%;
+
+    border-bottom: solid 0.063rem var(--Gray);
+    
+    padding-right: 8%;
+    padding-left: 8%;
+    list-style: none;
+
+    background-color: var(--Black);
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--White);
+    margin-left: 1.25rem;
+}
+
+.nav li{
+    margin: 10px;
+}
+
+.content {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5rem;
+    overflow: auto; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.home {
+    scroll-behavior: smooth;
+    padding-top: 10rem;
+    height: 100vh;
+}
+
+.projetos {
+    scroll-behavior: smooth;
+    padding-top: 10rem;
+    height: 100vh;
 }
 
 .footer {
-    background-color: yellow;
+    background-color: var(--Pink);
+    width: 100%;
+    padding-left: 8%;
 }
 
-@media screen and (max-width: 670px) {
+.recuo {
+    padding-left: 5%;
+}
+
+a {
+    color: var(--White);
+    text-decoration: inline;
+    border-style: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--White);
+    display: inline;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--White);
+    display: inline;
+}
+
+h3 {
+    margin-top: 20rem;
+    font-size: 20px;
+    text-align: right;
+    color: var(--White);
+}
+
+h4 {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--Pink);
+    display: inline;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--Pink);
+    display: inline;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--Pink);
+    display: inline;
+    text-indent: 40px
+}
+
+h7 {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--White);
+    display: inline;
+}
+
+img.icone{
+    max-width: 100%;
+    max-height: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 5px;
+    margin: 0%;
+    margin-bottom: 5px; 
+    margin-right: auto;
 }
