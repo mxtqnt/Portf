@@ -250,14 +250,6 @@ img.icone{
     border-radius: 20rem;
   }
 
-.nav {
-    padding-left: 8%;
-}
-
-.home {
-    padding: 2%;
-}
-
 .time {
     border: none;
     margin-bottom: 50px;
@@ -265,7 +257,7 @@ img.icone{
 }
 
 a {
-    font-size: 0%;
+    display: none;
 }
 
 h1 {
@@ -311,10 +303,6 @@ h10 {
 
 h11 {
     font-size: 0%;
-}
-
-.contato {
-    margin-top: 150px;
 }
 
 }
