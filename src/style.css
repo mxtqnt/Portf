@@ -4,7 +4,7 @@
     --White: #ffffff;
     --Black: #1F2125;
     --Pink: #A91079;
-    --Gray: #333333;
+    --stone: #333333;
 }
 
 * {
@@ -49,7 +49,7 @@ body {
     margin: 0px;
     margin-top: 0%;
 
-    border-bottom: solid 0.063rem var(--Gray);
+    border-bottom: solid 0.063rem var(--stone);
     
     padding-right: 8%;
     padding-left: 8%;
