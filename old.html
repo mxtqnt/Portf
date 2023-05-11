@@ -247,3 +247,243 @@
   
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="rounded-lg overflow-hidden">
+    <img src="src/design/macramany.png" alt="Imagem" class="w-full h-auto">
+  </div>
+  <div class="rounded-lg bg-gray-200 p-4">
+    <!-- Conteúdo da segunda div -->
+  </div>
+</div>
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/inhousemockup.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/inhousemockup.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/Keepme1.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/Keepme1.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/keepme2.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/keepme2.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/keepme3.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/keepme3.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/keepme4.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/keepme4.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+<div class="rounded-image" onmouseover="showFullImage(this)" onmouseout="hideFullImage()">
+  <img src="src/design/macramany.png" alt="Photo" class="w-full h-full object-cover" />
+  <img src="src/design/macramany.png" alt="Full Photo" class="full-image hidden rounded-image" />
+</div>
+
+</div>
+</div>
+
+<script>
+function showFullImage(element) {
+const fullImage = element.querySelector('.full-image');
+fullImage.classList.remove('hidden');
+}
+
+function hideFullImage() {
+const fullImages = document.querySelectorAll('.full-image');
+fullImages.forEach((image) => {
+  image.classList.add('hidden');
+});
+}
+</script>
+
+
+
+
+
+<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+  <div class="-m-1 flex flex-wrap md:-m-2">
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/inhousemockup.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Identidade visual desenvolvida para Inhouse, uma empresa de móveis planejados
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/macramany.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Identidade visual desenvolvida para Macramany, uma empresa de artesanato.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/macramany2.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Identidade visual desenvolvida para Macramany, uma empresa de artesanato.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/Keepme1.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Protótipo final desenvolvido para a disciplina de Banco de Dados 1. Keep Me, uma ferramenta de controle de humor pessoal.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/keepme2.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Protótipo final desenvolvido para a disciplina de Banco de Dados 1. Keep Me, uma ferramenta de controle de humor pessoal.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/keepme4.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Protótipo final desenvolvido para a disciplina de Banco de Dados 1. Keep Me, uma ferramenta de controle de humor pessoal.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/inhouse1.png" />
+      </div>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/inhouse2.png" />
+      </div>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/inhouse3.png" />
+      </div>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/mike.png" />
+      </div>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/mike2.png" />
+      </div>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/keepme5.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Primeiro protótipo desenvolvido para a disciplina de Banco de Dados 1. Keep Me, uma ferramenta de controle de humor pessoal.
+      </p>
+    </div>
+    <div class="flex w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="src/design/keepme6.png" />
+      </div>
+      <p class="text-base font-medium   mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100">
+          Primeiro protótipo desenvolvido para a disciplina de Banco de Dados 1. Keep Me, uma ferramenta de controle de humor pessoal.
+      </p>
+    </div>
+
+
+  </div>
+</div>
