@@ -26,6 +26,19 @@
         background-color: #4A5568; /* Cor Stone 700 */
         color: white;
         }
+        .hover-effect-txt:hover {
+        background-color: #EDF2F7; /* cor stone-100 */
+        color: #1c1917; /* cor stone-900 */
+        }
+
+        .hover-effect-div {
+        box-shadow: none; /* Remover a sombra padrão */
+        transition: box-shadow 0.3s ease; /* Adicionar uma transição suave */
+        }
+
+        .hover-effect-div:hover {
+            box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.2); /* Adicionar uma sombra na parte inferior */
+        }
       </style>
     <title>Ana Misque</title>
     </head>
@@ -45,6 +58,9 @@
             </li>
             <li>
             <a href="#Sobre" class="focus:bg-stone-700 active:bg-stone-700 block py-2 pl-3 pr-4 text-stone-900 rounded hover:bg-stone-100 md:hover:bg-transparent md:hover:text-stone-700 md:p-0 md:dark:hover:text-stone-500 dark:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-stone-700">Sobre mim</a>
+            </li>
+            <li>
+            <a href="#Skills" class="block py-2 pl-3 pr-4 text-stone-900 rounded hover:bg-stone-100 md:hover:bg-transparent md:hover:text-stone-700 md:p-0 md:dark:hover:text-stone-500 dark:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-stone-700">Skills</a>
             </li>
             <li>
             <a href="#Projetos" class="block py-2 pl-3 pr-4 text-stone-900 rounded hover:bg-stone-100 md:hover:bg-transparent md:hover:text-stone-700 md:p-0 md:dark:hover:text-stone-500 dark:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-stone-700">Projetos</a>
@@ -93,9 +109,8 @@
                     é só clicar no botão.
                 </p>
                 
-                <a href="index.html" class="bg-stone-100 inline-flex items-center justify-center px-5 py-3 mr-3  font-medium text-center text-stone-900 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                <a href="index.html" class="bg-stone-700 hover:bg-stone-800 text-white font-bold py-2 px-4 rounded">
                     Ir para Computação
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
             </div>  
         </div>
@@ -143,12 +158,12 @@
                 </p>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="src/svg/brasilmapa.svg" alt="Mapa do Brasil com destaque em Goiás">
+                <img class="transition-transform duration-300 transform hover:scale-105" src="src/svg/brasilmapa.svg" alt="Mapa do Brasil com destaque em Goiás">
             </div>                
         </div>
     </section>
 
-    <section id="Skills" class="bg-white dark:bg-stone-900 block">
+    <section id="Skills" class="bg-white dark:bg-stone-900 block mb-40">
         <!--  hidden md:block  -->
          <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
              <div class=" mb-8 lg:mb-16">
@@ -193,6 +208,14 @@
                      </div>
                      <h3 class="mb-2 text-xl font-bold dark:text-white">Ilustrator</h3>
                      <p class="text-stone-500 dark:text-stone-400">Ainda estou em estudo, mas já tenho experiência com vetorização utilizando Figma e Inkscape.
+                     </p>                    
+                 </div>
+                 <div>
+                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                         <img src="src/svg/tailwind.svg" alt="">
+                     </div>
+                     <h3 class="mb-2 text-xl font-bold dark:text-white">Tailwind</h3>
+                     <p class="text-stone-500 dark:text-stone-400">Biblioteca de estrutura CSS de código aberto.
                      </p>                    
                  </div>
                  <div>
@@ -255,21 +278,21 @@
          </div>
        </section>
     
-<div id="Projetos" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div class="grid gap-4">
-        <div class="container">
+<div id="Projetos" class="grid grid-cols-2 md:grid-cols-4 gap-4p ">
+    <div class="grid gap-4 grid gap-4 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/153141021/MacraMany?tracking_source=project_owner_other_projects">
               <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/macramany.png" alt="">
                 <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-90 text-white rounded-br-lg rounded-bl-lg">
-                  <p class="text-base font-medium mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100 text-center">
+                  <p class="text-base font-medium mb-6 font-light text-stone-500 lg:mb-8 md:text-lg lg:text-xl dark:text-stone-100 text-center ">
                     Identidade visual desenvolvida para Macramany, uma marca de macramê.
                   </p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="container">
+          <div class="container transition-transform duration-300 transform hover:scale-90">
               <a target="_blank" href="https://www.behance.net/gallery/154215151/KeepMe-New?tracking_source=project_owner_other_projects">
                 <div class="relative">
                   <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/keepme.png" alt="">
@@ -281,7 +304,7 @@
                 </div>
               </a>
             </div>
-            <div class="container">
+            <div class="container transition-transform duration-300 transform hover:scale-90">
                 <a target="_blank" href="https://www.behance.net/gallery/170351581/Karu?">
                   <div class="relative">
                     <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/Karu.png" alt="">
@@ -294,8 +317,8 @@
                 </a>
             </div>
     </div>
-    <div class="grid gap-4">
-        <div class="container">
+    <div class="grid gap-4 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/153139997/Mike-Wazowski?tracking_source=project_owner_other_projects">
               <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/mike2.png" alt="">
@@ -307,7 +330,7 @@
               </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350021/Viajah">
             <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/viajahturismo.png" alt="">
@@ -319,7 +342,7 @@
             </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350173/Grupo-Benser?">
                 <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/grupobenser.png" alt="">
@@ -331,7 +354,7 @@
                 </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350311/Sustentar?">
             <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/sustentarej.png" alt="">
@@ -344,8 +367,8 @@
             </a>
         </div>
     </div>
-    <div class="grid gap-4">
-        <div class="container">
+    <div class="grid gap-4 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/156045235/Inhouse?tracking_source=project_owner_other_projects">
               <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/inhousemockup.png" alt="">
@@ -357,7 +380,7 @@
               </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350459/Conpavet?share=1">
                 <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/compavet.png" alt="">
@@ -369,7 +392,7 @@
                 </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350587/Gheeck?share=1">
                 <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/GHEECK.png" alt="">
@@ -381,7 +404,7 @@
                 </div>
             </a>
         </div>
-        <div class="container">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/170350645/Audere?share=1">
                 <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/audere.png" alt="">
@@ -394,8 +417,8 @@
             </a>
         </div>
     </div>
-    <div class="grid gap-4">
-        <div class="container">
+    <div class="grid gap-4 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="container transition-transform duration-300 transform hover:scale-90">
             <a target="_blank" href="https://www.behance.net/gallery/156045235/Inhouse?tracking_source=project_owner_other_projects">
               <div class="relative">
                 <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/bloquinho.png" alt="">
@@ -407,7 +430,7 @@
               </div>
             </a>
           </div>
-          <div class="container">
+          <div class="container transition-transform duration-300 transform hover:scale-90">
               <a target="_blank" href="https://www.behance.net/gallery/170350967/Tectonica?share=1">
                 <div class="relative">
                   <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/tectonica.png" alt="">
@@ -419,7 +442,7 @@
                 </div>
               </a>
             </div>
-          <div class="container">
+          <div class="container transition-transform duration-300 transform hover:scale-90">
               <a target="_blank" href="https://www.behance.net/gallery/170350717/Doulas?share=1">
                   <div class="relative">
                   <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/doulas.png" alt="">
@@ -431,7 +454,7 @@
                   </div>
               </a>
           </div>
-          <div class="container">
+          <div class="container transition-transform duration-300 transform hover:scale-90">
               <a target="_blank" href="https://www.behance.net/gallery/170351025/Primeira-prototipagem?">
                   <div class="relative">
                   <img class="h-auto max-w-full rounded-lg transition-all duration-300 rounded-lg cursor-pointer filter" src="src/design/arttibus.png" alt="">
@@ -445,24 +468,24 @@
           </div>
     </div>
 </div>
-<footer id="Contato" class="bg-white dark:bg-stone-100"> 
+<footer id="Contato" class="bg-white dark:bg-stone-100 mt-40"> 
     <div class="py-8  mx-auto max-w-screen-xl px-4">
         <!-- <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-stone-900 dark:text-black md:text-4xl">Contato</h2> -->
         <div class="grid grid-cols-2 gap-4 text-stone-500 sm:gap-4 md:grid-cols-2 lg:grid-cols-4 dark:text-stone-400 ">
-            <a href="https://www.behance.net/mxtqntdev" class="flex justify-center items-center" target="_blank">
+            <a href="https://www.behance.net/mxtqntdev" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50 " src="src/svg/becont.svg" alt="Behance Icone">
                 </svg>                        
             </a>
-            <a href="https://discordapp.com/users/mxtqnt#5494" class="flex justify-center items-center" target="_blank">
+            <a href="https://discordapp.com/users/mxtqnt#5494" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50" src="src/svg/discordcont.svg" alt="Discord Icone">
                 </svg>                        
             </a>
-            <a href="https://github.com/mxtqnt" class="flex justify-center items-center" target="_blank">
+            <a href="https://github.com/mxtqnt" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50" src="src/svg/githubcont.svg" alt="Git Hub Icone">
                 </svg>                        
             </a>
-            <a href="https://github.com/mxtqnt" class="flex justify-center items-center" target="_blank">
-                <img class="opacity-1000 hover:opacity-50" src="src/svg/linkedincont.svg" alt="linkedin Icone">
+            <a href="https://www.linkedin.com/in/ana-carolina-569019222/" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
+                <img class="opacity-1000 hover:opacity-50" src="src/svg/linkedincont.svg" alt="Linkedin Icone">
                 </svg>                        
             </a>
         </div>

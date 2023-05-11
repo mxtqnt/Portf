@@ -26,6 +26,19 @@
         background-color: #4A5568; /* Cor Stone 700 */
         color: white;
         }
+        .hover-effect-txt:hover {
+        background-color: #EDF2F7; /* cor stone-100 */
+        color: #1c1917; /* cor stone-900 */
+        }
+
+        .hover-effect-div {
+        box-shadow: none; /* Remover a sombra padrão */
+        transition: box-shadow 0.3s ease; /* Adicionar uma transição suave */
+        }
+
+        .hover-effect-div:hover {
+            box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.2); /* Adicionar uma sombra na parte inferior */
+        }
       </style>
     <title>Ana Misque</title>
 </head>
@@ -99,9 +112,8 @@
                     é só clicar no botão.
                 </p>
                 
-                <a href="design.html" class="bg-stone-100 inline-flex items-center justify-center px-5 py-3 mr-3  font-medium text-center text-stone-900 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                <a href="design.html" class="bg-stone-700 hover:bg-stone-800 text-white font-bold py-2 px-4 rounded">
                     Ir para Design
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
             </div>  
         </div>
@@ -139,7 +151,7 @@
                 </p>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="src/svg/brasilmapa.svg" alt="Mapa do Brasil com destaque em Goiás">
+                <img class="transition-transform duration-300 transform hover:scale-105" src="src/svg/brasilmapa.svg" alt="Mapa do Brasil com destaque em Goiás">
             </div>                
         </div>
     </section>
@@ -149,7 +161,7 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-stone-900 dark:text-white">Projetos</h2>
             </div> 
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700">
+                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700 hover-effect-div hover-effect-div">
                     <!-- <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/svg/sweetra.png" alt="Bonnie Avatar">
                     </a> -->
@@ -165,7 +177,7 @@
                         </a> -->
                     </div>
                 </div> 
-                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700">
+                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700 hover-effect-div">
                     <!-- <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/svg/sweetra.png" alt="Bonnie Avatar">
                     </a> -->
@@ -181,7 +193,7 @@
                         </a> -->
                     </div>
                 </div> 
-                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700">
+                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700 hover-effect-div">
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-stone-900 dark:text-white">
                             <!-- <a href="#"> -->Sensor de Fita</a>
@@ -194,7 +206,7 @@
                         </a> -->
                     </div>
                 </div> 
-                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700">
+                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700 hover-effect-div">
                     <!-- <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/svg/sweetra.png" alt="Bonnie Avatar">
                     </a> -->
@@ -210,7 +222,7 @@
                         </a> -->
                     </div>
                 </div>
-                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700">
+                <div class="items-center bg-stone-50 rounded-lg shadow sm:flex dark:bg-stone-800 dark:border-stone-700 hover-effect-div">
                     <!-- <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/svg/sweetra.png" alt="Bonnie Avatar">
                     </a> -->
@@ -398,18 +410,18 @@
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-stone-900 dark:text-white ">Soft Skills</h2>
       </div>
             <div class="grid grid-cols-3 grid-rows-4 gap-4 bg-white dark:bg-stone-900 flex items-center">
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Comunicação</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Inteligência Emocional</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Paciência</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Criatividade</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Dedicação</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Honestidade</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Iniciativa</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Liderança</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Autogestão</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Organização</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Proatividade</h3></div>
-                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center">Planejamento</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Comunicação</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Inteligência Emocional</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Paciência</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Criatividade</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Dedicação</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Honestidade</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Iniciativa</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Liderança</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Autogestão</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt hover-effect-txt">Organização</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Proatividade</h3></div>
+                <div><h3 class="mb-2 text-xl font-bold dark:text-white text-center hover-effect-txt">Planejamento</h3></div>
             
             </div>
       </div>
@@ -422,21 +434,21 @@
              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-stone-900 dark:text-white">Experiência</h2>
          </div>
          <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-1 md:gap-12 md:space-y-0">
-             <div>
+             <div class="transition-transform duration-300 transform hover:scale-105">
                  <h3 class="mb-2 text-xl font-bold dark:text-white">Rancheiro Jan 2021 - Set 2021 </h3>
                  <p class="text-stone-500 dark:text-stone-400 font-bold">Jovem aprendiz
                 </p>   
                  <p class="text-stone-500 dark:text-stone-400">Atividades de meio período, durante a experiência desenvolvi habilidades com suporte, impressoras, rede e câmeras.  Terminei por ser efetivada como estagiária.
                  </p>                    
              </div>
-             <div>
+             <div class="transition-transform duration-300 transform hover:scale-105">
                 <h3 class="mb-2 text-xl font-bold dark:text-white">Rancheiro Set 2022 - Agora </h3>
                 <p class="text-stone-500 dark:text-stone-400 font-bold">Estagiária de Projetos
                </p>   
                 <p class="text-stone-500 dark:text-stone-400">Estou no segundo ano de estágio, na área de automação industrial, desenvolvendo com OpenCV, IoT, Raspberry Pi, Eletrônica, Linux, Python, Arduino e PostgreSQL.
                 </p>                    
             </div>
-            <div>
+            <div class="transition-transform duration-300 transform hover:scale-105">
                 <h3 class="mb-2 text-xl font-bold dark:text-white">Code Tower Out 2022 - Agora</h3>
                 <p class="text-stone-500 dark:text-stone-400 font-bold">Diretora de Marketing
                </p>   
@@ -451,20 +463,20 @@
     <div class="py-8  mx-auto max-w-screen-xl px-4">
         <!-- <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-stone-900 dark:text-black md:text-4xl">Contato</h2> -->
         <div class="grid grid-cols-2 gap-4 text-stone-500 sm:gap-4 md:grid-cols-2 lg:grid-cols-4 dark:text-stone-400 ">
-            <a href="https://www.behance.net/mxtqntdev" class="flex justify-center items-center" target="_blank">
+            <a href="https://www.behance.net/mxtqntdev" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50 " src="src/svg/becont.svg" alt="Behance Icone">
                 </svg>                        
             </a>
-            <a href="https://discordapp.com/users/mxtqnt#5494" class="flex justify-center items-center" target="_blank">
+            <a href="https://discordapp.com/users/mxtqnt#5494" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50" src="src/svg/discordcont.svg" alt="Discord Icone">
                 </svg>                        
             </a>
-            <a href="https://github.com/mxtqnt" class="flex justify-center items-center" target="_blank">
+            <a href="https://github.com/mxtqnt" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
                 <img class="opacity-1000 hover:opacity-50" src="src/svg/githubcont.svg" alt="Git Hub Icone">
                 </svg>                        
             </a>
-            <a href="https://github.com/mxtqnt" class="flex justify-center items-center" target="_blank">
-                <img class="opacity-1000 hover:opacity-50" src="src/svg/linkedincont.svg" alt="linkedin Icone">
+            <a href="https://www.linkedin.com/in/ana-carolina-569019222/" class="flex justify-center items-center transition-transform duration-300 transform hover:scale-105" target="_blank">
+                <img class="opacity-1000 hover:opacity-50" src="src/svg/linkedincont.svg" alt="Linkedin Icone">
                 </svg>                        
             </a>
         </div>
